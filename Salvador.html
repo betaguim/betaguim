@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+<style type="text/css">
+   html { scroll-behavior: smooth; }
+   h3     { font-family: Broadway;  font-size: 18pt; color: black;}
+   body   {background-color: #777799;
+           background-image: linear-gradien(yellow,brown );}
+   
+   p     { font-family: Calibri;  font-size: 12pt; color: white;}
+   f     { font-family: Calibri;  font-size: 18pt; color: black;}
+   e     { font-family: Magneto;  font-size: 12pt; color: white;}
+   
+   #d01    {position:absolute; left: 140px; right: 340px; top: 125px;
+            height: 400px;
+            width: 600px;
+             overflow-y: scroll;
+           font-family: Calibri;  font-size: 13pt; color: white;}
+		   
+   #d02    {position:absolute; left: 160px; right: 340px; top: 590px;
+            height: 190px;
+            width:  1050px;
+            overflow-y: auto;
+            font-family: Calibri;  font-size: 13pt; color: yellow;}
+	 
+   img     {border-radius: 50%;
+            padding: 5px;	
+		    float: right}
+		   
+</style>
+<script>
+
+function escriu(id) {
+  var codi = Number(id);
+  
+  estac.src = F[codi];        
+  document.getElementById('d02').innerHTML = C[codi];
+}
+
+</script>
+</head>
+
+<body>
+
+<script src="Salvador.js"> </script>
+
+<h3> Gabinet Salvador <h3>  <p id="data">  </p>
+
+<img id="estac" src="Salvadoriana,jpg"  height="470" >
+
+
+  
+<div id="d01">  
+
+<p>Gabinet Salvador </p>
+<p>PRESENTACIÓ<br>
+
+Bon dia, benvinguts/des a la Sala Salvador.<br>
+
+Els Salvador van ser una nissaga d’apotecaris i naturalistes barcelonins que, de començaments del segle XVII a mitjans del segle XIX, van aplegar una biblioteca i unes col·leccions científiques importants, a la seva apotecaria del carrer Ample.<br>
+Se sap que des de mitjans del segle XVIII van obrir aquest patrimoni als estudiosos, es considera el primer museu obert al públic a Barcelona.<br>
+Actualment es conserven en bon estat els mobles antics de fusta amb policromies, la biblioteca i documents i les col·leccións de ciències naturals.<br>
+</p><br>
+
+
+
+<p id="01" onclick="escriu(id)"> Arbre genealògic (sis generacions)</p>
+<p id="02" onclick="escriu(id)"> Gabinets de curiositats</p>
+<p id="03" onclick="escriu(id)"> Biblioteca </p>
+<p id="04" onclick="escriu(id)"> Herbari  </p> 
+<p id="05" onclick="escriu(id)"> Pots de productes </p>
+<p id="06" onclick="escriu(id)"> Les tertúlies  </p>
+<p id="07" onclick="escriu(id)"> Naturalia i Artificialia  </p>
+<p id="08" onclick="escriu(id)"> La correspondència   </p>
+<p id="09" onclick="escriu(id)"> Primer Museu de Barcelona </p>
+
+
+</div>
+
+ <div id="d02">
+ 
+ </div>
+
+<e id="10" onclick="escriu(id)"> Aristòtil </e>  
+<e id="11" onclick="escriu(id)"> Plini el Vell </e> 
+<e id="12" onclick="escriu(id)"> Joseph Pitton de Tournefort</e> 
+<e id="13" onclick="escriu(id)"> Pierre André Pourret </e> 
+<e id="14" onclick="escriu(id)"> Carl von Linné </e> 
+</body>
+
+
+</html>
